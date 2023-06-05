@@ -1,6 +1,5 @@
-FROM python3.7-buster 
+FROM python:3.7.16-slim 
 
-RUN pip install tensorflow == 2.7
+RUN pip3 install tensorflow==2.5.0
 
-
-ENTRYPOINT["python","main.py"]
+ENTRYPOINT ["python","main.py"]
